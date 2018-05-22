@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+
+  <!-- Search -->
+  <div class="search">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Browse Recipes</h2>
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="form-group">
+                <label>Choose category</label>
+                <select class="js-search-category form-control" name="category" data-placeholder="Choose Category">
+                  <option value="1">All</option>
+                  <option value="2">Breakfast</option>
+                  <option value="3">Lunch</option>
+                  <option value="4">Beverages</option>
+                  <option value="5">Appetizers</option>
+                  <option value="6">Soups</option>
+                  <option value="7">Salads</option>
+                  <option value="8">Beef</option>
+                  <option value="9">Poultry</option>
+                  <option value="10">Pork</option>
+                  <option value="11">Seafood</option>
+                  <option value="12">Vegetarian</option>
+                  <option value="13">Vegetables</option>
+                  <option value="14">Desserts</option>
+                  <option value="15">Canning / Freezing</option>
+                  <option value="16">Breads</option>
+                  <option value="17">Holidays</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Search by Keyword">
+                <button type="submit" class="btn">Search Recipes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}
